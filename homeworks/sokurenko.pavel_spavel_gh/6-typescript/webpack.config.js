@@ -14,6 +14,12 @@ module.exports = {
                 },
             },
         ],
+        rules: [    // https://webpack.js.org/guides/asset-management/
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
@@ -23,10 +29,9 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            // https://github.com/Ihatetomatoes/webpack-101-starter
-            title: 'spavel 6-typecript',
-            template: './src/index.html',
-        })
+        new HtmlWebpackPlugin({     // https://github.com/Ihatetomatoes/webpack-101-starter
+            title: "spavel 6-typecript",
+            template: "./src/index.html",
+        }),
     ],
 };
