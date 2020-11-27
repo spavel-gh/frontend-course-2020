@@ -1,3 +1,4 @@
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -6,8 +7,11 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: "ts-loader",
                 exclude: /node_modules/,
+                loader: "babel-loader",
+                options: {
+                    presets: [["@babel/preset-env", { targets: "defaults" }]],
+                },
             },
         ],
     },
@@ -18,4 +22,11 @@ module.exports = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            // https://github.com/Ihatetomatoes/webpack-101-starter
+            title: 'spavel 6-typecript',
+            template: './src/index.html',
+        })
+    ],
 };
