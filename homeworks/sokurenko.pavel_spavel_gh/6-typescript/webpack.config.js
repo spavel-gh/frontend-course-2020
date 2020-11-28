@@ -1,4 +1,5 @@
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.ts",
@@ -18,6 +19,12 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'my title',
+      filename: 'src/index.html'
+    }),
+  ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
