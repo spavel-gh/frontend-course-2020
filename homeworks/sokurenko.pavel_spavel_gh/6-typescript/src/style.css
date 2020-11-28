@@ -1,5 +1,69 @@
-body {
-  margin: 0;
+:root {
+  --color-red: #FA5538;
+  --color-purple: #AB50DC;
+  --color-blue: #439BF3;
+  --color-green: #48DC78;
+  --color-yellow: #FAF797;
+  --color-grey: #B7B7B7;
+  --color-grey-white: #E0E0E0;
+  --color-grey-black: #545454;
+}
+
+* {
   padding: 0;
-  background-color: #F00;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  background-color: #FFFBCB;
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.game-content {
+  padding: 2rem 4rem;
+  background-color: #FFF;
+}
+
+.score,
+.cube-score,
+.progress-bar {
+  text-align: center;
+}
+
+.cube {
+  background-color: var(--color-yellow);
+  width: 100px;
+  height: 100px;
+}
+
+
+.key {
+  font-size: 2em;
+  margin-top: 3rem;
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-grey-white);
+}
+
+.color-false {
+  background-color: var(--color-red);
+}
+
+.color-true {
+  background-color: var(--color-green);
 }
