@@ -1,5 +1,6 @@
 import './style.css';
+import {A} from './game-core';
 
-function a(){
-    console.log('hello!');
-} a();
+const a = new A();
+
+console.log(a);
