@@ -1,0 +1,396 @@
+html {
+  font-size: 18px;
+}
+
+.line-breaker {
+  display: block;
+}
+
+
+/*
+    global
+*/
+
+:root {
+  --main-width: 1600px;
+  --page-width: 1110px;
+}
+
+
+/*
+    general page
+*/
+
+.page {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn, .btn::before {
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 3.66rem;
+  border-radius: .55rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #FFF;
+  background: #9B9BCA;
+  outline: none;
+}
+
+
+.header-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+
+/*
+    title-section
+*/
+
+.title-section {
+  height: 41rem;
+  background-image: url("./assets/bg-s1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-section-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.11rem;
+  line-height: 3.11rem;
+  /* padding-bottom: 1.66rem; */
+}
+
+.title-section-subtitle {
+  line-height: 1.5rem;
+}
+
+
+/*
+    service-section
+*/
+
+
+.header-title {
+  color: #505050;
+}
+
+.header-nav > * {
+  font-weight: 500;
+  color: #717784;
+  text-decoration: none;
+}
+
+.header-nav .btn {
+  font-weight: 600;
+  color: #FFF;
+}
+
+.header-nav > * {
+  margin-left: 3.22rem;
+}
+
+
+.service-section .section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.44rem;
+  text-align: center;
+  line-height: 2.22rem;
+}
+
+.service-section .text-content {
+  text-align: center;
+  line-height: 1.44rem;
+}
+
+.service-section .text-content > * {
+  padding-top: .61rem;
+  padding-bottom: .61rem;
+  text-align: center;
+}
+
+
+/*
+    service-section
+*/
+
+/* service-items */
+
+
+.service-item {
+  box-sizing: border-box;
+  border: .0555rem solid #9D9D9D00;
+  border-radius: .27rem;
+  transition: padding .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.service-item:hover {
+  border-color: #9D9D9DFF;
+  padding: 0 1.11rem;
+}
+
+.service-item .item-icon {
+  width: 3.61rem;
+}
+
+
+.service-item .item-title {
+  font-size: 1.22rem;
+  font-weight: 500;
+  line-height: 2.22rem;
+}
+
+.service-item .text-content {
+  text-align: center;
+  line-height: 1.11rem;
+  font-size: .88rem;
+}
+
+
+/*
+    demo-section
+*/
+
+.demo-section {
+  height: 43.33rem;
+  background-image: url("./assets/bg-s3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.demo-section .section-title {
+  font-family: "PT Serif", serif;
+  font-size: 2.66rem;
+  line-height: 3.73rem;
+  margin-left: 3.11rem;
+}
+
+/*
+    feature-section
+*/
+
+
+.feature-section .section-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.44rem;
+  text-align: center;
+  line-height: 2.22rem;
+}
+
+.feature-section .text-content {
+  text-align: center;
+  line-height: 1.44rem;
+}
+
+/* feature-item */
+
+.feature-section .feature-item {
+  position: relative;
+  background: #FFF;
+  box-shadow: 0 1.11rem 1.66rem rgba(0, 0, 0, .1);
+  border-radius: .55rem;
+  padding: 0 2.66rem;
+}
+
+.feature-section .feature-item::before {
+  content: "";
+  position: absolute;
+  top: -.056rem;
+  bottom: -.056rem;
+  left: -.056rem;
+  right: -.056rem;
+  background: linear-gradient(180deg, #D2D2D2, #9D9D9D00);
+  border-radius: .62rem;
+  z-index: -1;
+}
+
+.feature-item .item-icon {
+  width: 18.88rem;
+  height: 8.33rem;
+  border-radius: .55rem;
+}
+
+.feature-item .item-title {
+  font-size: 1.44rem;
+  font-weight: 500;
+  line-height: 1.44rem;
+}
+
+.feature-item .text-content {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.66rem;
+}
+
+.feature-item .btn {
+  position: relative;
+  top: 1.33rem;
+  box-shadow: 0 1.11rem 1.66rem rgba(0, 0, 0, .1);
+  transition: box-shadow .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.feature-item .btn:hover {
+  box-shadow: 0 .55rem 1.33rem rgb(0, 0, 0, .15);
+}
+
+
+/*
+    join-section
+*/
+
+.join-section {
+}
+
+.join-section .section-title {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 2.66rem;
+  text-align: center;
+  line-height: 3.66rem;
+}
+
+.join-section .join-form {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 40px rgba(149, 149, 201, 0.4);
+  border-radius: 10px;
+  padding: 6rem 9.66rem 3rem;
+  
+}
+
+.join-section .join-input-title {
+  font-size: .88rem;
+  line-height: 2.22rem;
+  color: #626780;
+  margin-bottom: .55rem;
+}
+
+.join-section .join-input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #626780;
+  line-height: 2.22rem;
+  background: #FFF;
+  border: .056rem solid #9595C9;
+  box-sizing: border-box;
+  border-radius: .27rem;
+  outline: none;
+  padding: .66rem 2.22rem;
+  width: 22.22rem;
+  transition: border-radius .3s cubic-bezier(0, 0, .2, 1),
+    box-shadow .3s cubic-bezier(0, 0, .2, 1);
+  margin-bottom: 1.66rem;
+}
+
+.join-section .join-input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #9D9D9D;
+}
+
+.join-section .join-input:hover {
+
+}
+
+.join-section .join-input:focus {
+  padding: calc(.66rem - .056rem) calc(2.22rem - .056rem);
+  border: .112rem solid #9595C9;
+  box-sizing: border-box;
+  box-shadow: 0 1.11rem 2.22rem rgba(149, 149, 201, .2);
+  border-radius: .55rem;
+}
+
+.join-section .join-form .btn {
+  font-family: "Rubik", sans-serif;
+  display: block;
+  margin-bottom: 1.66rem;
+  font-size: .88rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.join-form .sign-up {
+  color: #626780;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.join-form .sign-up-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #F00;
+}
+
+.join-form .sign-up-link:hover {
+  text-decoration: underline;
+}
+
+
+/*
+    footer-section
+*/
+
+.footer-section {
+  background-color: #9B9BCA;
+  padding-top: 2.77rem;
+  padding-bottom: 2.44rem;
+}
+
+
+/* links-section */
+
+.links-section {
+  margin-bottom: 4.33rem;
+}
+
+.links-section .links-category .links-category-title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFF;
+  margin-bottom: .66rem;
+}
+
+.links > li > a {
+  display: inline-block;
+  color: #E6E6E6;
+  text-decoration: none;
+  font-size: .88rem;
+  line-height: 1.33rem;
+  font-weight: 400;
+}
+
+.links > li > a:hover {
+  text-decoration: underline;
+}
+
+
+/* end-section */
+
+.end-section {
+
+}
+.social-icons {
+  margin-right: 6.66rem;
+}
+
+.social-icon {
+  height: 36px;
+  margin-right: 1.77rem;
+}
+
+.footer-logo {
+
+}
+
+.footer-logo-icon {
+  height: 36px;
+  margin-right: .44rem;
+}
