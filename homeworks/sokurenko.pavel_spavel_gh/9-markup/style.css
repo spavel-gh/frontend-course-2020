@@ -2,6 +2,7 @@
 
 * {
   outline: 1px dotted #0001;
+  outline-offset: -1px;
 }
 
 .page-section {

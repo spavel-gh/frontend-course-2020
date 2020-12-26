@@ -2,11 +2,6 @@ html {
   font-size: 18px;
 }
 
-.line-breaker {
-  display: block;
-}
-
-
 /*
     global
 */
@@ -37,12 +32,42 @@ html {
   color: #FFF;
   background: #9B9BCA;
   outline: none;
+  cursor: pointer;
 }
 
+.logo-icon {
+  font-family: "Rammetto One", cursive;
+  font-size: 1.11rem;
+  line-height: 0;
+  color: #FFF;
+  text-shadow: .111rem .111rem .333rem rgba(0, 0, 0, .25);
+}
+
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.44rem;
+}
+
+/*
+    header-section
+*/
+
+.header {
+  width: 100%;
+  height: 6.44rem;
+  position: absolute;
+}
+
+.header-logo-wrap > * {
+  margin-right: 1.22rem;
+}
 
 .header-logo {
   width: 4rem;
   height: 4rem;
+  border-radius: 100%;
+  background-color: #C8C8C8;
 }
 
 
@@ -61,12 +86,14 @@ html {
 .title-section-title {
   font-family: "DM Serif Display", serif;
   font-size: 3.11rem;
+  color: #696A86;
   line-height: 3.11rem;
   /* padding-bottom: 1.66rem; */
 }
 
 .title-section-subtitle {
   line-height: 1.5rem;
+  color: #696A86;
 }
 
 
@@ -97,6 +124,7 @@ html {
 
 .service-section .section-title {
   font-family: "Poppins", sans-serif;
+  color: #626780;
   font-weight: 500;
   font-size: 1.44rem;
   text-align: center;
@@ -106,6 +134,7 @@ html {
 .service-section .text-content {
   text-align: center;
   line-height: 1.44rem;
+  color: #626780;
 }
 
 .service-section .text-content > * {
@@ -135,7 +164,13 @@ html {
 }
 
 .service-item .item-icon {
-  width: 3.61rem;
+  max-width: 3.61rem;
+  max-height: 3.61rem;
+}
+
+.service-item .item-icon > * {
+  width: 1rem;
+  height: 1rem;
 }
 
 
@@ -143,6 +178,7 @@ html {
   font-size: 1.22rem;
   font-weight: 500;
   line-height: 2.22rem;
+  color: #626780;
 }
 
 .service-item .text-content {
@@ -182,11 +218,13 @@ html {
   font-size: 1.44rem;
   text-align: center;
   line-height: 2.22rem;
+  color: #626780;
 }
 
 .feature-section .text-content {
   text-align: center;
   line-height: 1.44rem;
+  color: #626780;
 }
 
 /* feature-item */
@@ -202,10 +240,10 @@ html {
 .feature-section .feature-item::before {
   content: "";
   position: absolute;
-  top: -.056rem;
-  bottom: -.056rem;
-  left: -.056rem;
-  right: -.056rem;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
   background: linear-gradient(180deg, #D2D2D2, #9D9D9D00);
   border-radius: .62rem;
   z-index: -1;
@@ -254,6 +292,7 @@ html {
   font-size: 2.66rem;
   text-align: center;
   line-height: 3.66rem;
+  color: #402B2B;
 }
 
 .join-section .join-form {
@@ -377,20 +416,55 @@ html {
 .end-section {
 
 }
+
+.end-section .copyright {
+  font-family: "Rubik", sans-serif;
+  color: #FFF;
+  font-size: .888rem;
+  line-height: 1.66rem;
+}
+
 .social-icons {
   margin-right: 6.66rem;
 }
 
-.social-icon {
-  height: 36px;
+.social-link {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-color: #FFF;
   margin-right: 1.77rem;
+  border-radius: 100%;
+}
+
+.social-icon {
+  max-width: 1.11rem;
+  max-height: 1.11rem;
+}
+
+.social-icon .facebook-icon {
+  max-width: .555rem;
+  max-height: 1.11rem;
+}
+
+.social-icon .twitter-icon {
+  max-width: 1rem;
+  max-height: .833rem;
+}
+
+.social-icon .instagram-icon {
+  max-width: .888rem;
+  max-height: .888rem;
 }
 
 .footer-logo {
 
 }
 
-.footer-logo-icon {
-  height: 36px;
+.footer-logo .logo-icon {
   margin-right: .44rem;
+}
+
+.footer-logo .logo-text {
+  color: #FFF;
 }
