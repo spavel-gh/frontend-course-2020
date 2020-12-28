@@ -1,20 +1,18 @@
-
-
 * {
   outline: 1px dotted #0001;
   outline-offset: -1px;
 }
 
 .page-section {
-  /* outline: #0003 dashed 1px;
-  outline-offset: -.5rem; */
+  outline: #0003 dashed 1px;
+  outline-offset: -.5rem;
 }
 
 img {
-  /* background-color: brown;
+  background-color: brown;
   object-fit: cover;
   outline: #0003 dashed 1px;
-  outline-offset: -1px; */
+  outline-offset: -1px;
 }
 
 
