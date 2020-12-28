@@ -268,3 +268,45 @@
   grid-template-columns: auto auto;
   align-items: center;
 }
+
+
+/*
+  responsive
+*/
+
+@media only screen and (max-width : 1110px) {
+
+  .page {
+    grid-template-columns: [visible-start] 1fr [page-start] auto [page-end] 1fr [visible-end];
+  }
+
+  .page-section {
+    grid-template-columns: 90vw;
+  }
+
+  .service-items {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    row-gap: 3rem;
+    column-gap: 3rem;
+  }
+
+  .feature-section .feature-items {
+    grid-template-columns: auto;
+    row-gap: 5rem;
+    justify-content: center;
+  }
+
+  .links-section {
+    grid-template-columns: auto auto;
+  }
+
+  .end-section {
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+  }
+
+  .end-section > * {
+    justify-self: center;
+  }
+}

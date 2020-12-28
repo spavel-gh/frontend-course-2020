@@ -2,25 +2,14 @@ html {
   font-size: 18px;
 }
 
-/*
-    global
-*/
-
 :root {
   --main-width: 1600px;
   --page-width: 1110px;
 }
 
-
 /*
-    general page
+    UI elements
 */
-
-.page {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
 
 .btn, .btn::before {
   font-family: "Poppins", sans-serif;
@@ -33,6 +22,17 @@ html {
   background: #9B9BCA;
   outline: none;
   cursor: pointer;
+}
+
+
+/*
+    general page
+*/
+
+.page {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .logo-icon {
@@ -53,12 +53,14 @@ html {
     header-section
 */
 
-.header {
+.header-section {
   width: 100%;
   height: 6.44rem;
   position: absolute;
   background: rgba(196, 196, 196, .1);
 }
+
+/* logo */
 
 .header-logo-wrap > * {
   margin-right: 1.22rem;
@@ -69,6 +71,27 @@ html {
   height: 4rem;
   border-radius: 100%;
   background-color: #C8C8C8;
+}
+
+.header-title {
+  color: #505050;
+}
+
+/* nav */
+
+.header-nav > * {
+  font-weight: 500;
+  color: #717784;
+  text-decoration: none;
+}
+
+.header-nav .btn {
+  font-weight: 600;
+  color: #FFF;
+}
+
+.header-nav > * {
+  margin-left: 3.22rem;
 }
 
 
@@ -88,7 +111,7 @@ html {
   font-family: "DM Serif Display", serif;
   font-size: 3.11rem;
   color: #696A86;
-  line-height: 3.11rem;
+  line-height: 1em;
   /* padding-bottom: 1.66rem; */
 }
 
@@ -101,27 +124,6 @@ html {
 /*
     service-section
 */
-
-
-.header-title {
-  color: #505050;
-}
-
-.header-nav > * {
-  font-weight: 500;
-  color: #717784;
-  text-decoration: none;
-}
-
-.header-nav .btn {
-  font-weight: 600;
-  color: #FFF;
-}
-
-.header-nav > * {
-  margin-left: 3.22rem;
-}
-
 
 .service-section .section-title {
   font-family: "Poppins", sans-serif;
@@ -150,7 +152,6 @@ html {
 */
 
 /* service-items */
-
 
 .service-item {
   box-sizing: border-box;
@@ -211,7 +212,6 @@ html {
 /*
     feature-section
 */
-
 
 .feature-section .section-title {
   font-family: "Poppins", sans-serif;
@@ -299,8 +299,8 @@ html {
 
 .join-section .join-form {
   background: #FFF;
-  box-shadow: 0 20px 40px rgba(149, 149, 201, .4);
-  border-radius: 10px;
+  box-shadow: 0 1.11rem 2.22rem rgba(149, 149, 201, .4);
+  border-radius: .555rem;
   padding: 6rem 9.66rem 3rem;
 }
 
@@ -360,7 +360,7 @@ html {
 .join-form .sign-up {
   color: #626780;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 2.22rem;
 }
 
 .join-form .sign-up-link {
@@ -384,7 +384,6 @@ html {
   padding-bottom: 2.44rem;
 }
 
-
 /* links-section */
 
 .links-section {
@@ -392,8 +391,8 @@ html {
 }
 
 .links-section .links-category .links-category-title {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.11rem;
+  line-height: 1.66rem;
   color: #FFF;
   margin-bottom: .66rem;
 }
@@ -468,4 +467,42 @@ html {
 
 .footer-logo .logo-text {
   color: #FFF;
+}
+
+
+/*
+  responsive
+*/
+
+@media only screen and (max-width : 1110px) {
+
+  span br,
+  p br {
+    display: none;
+  }
+
+  .title-section-title {
+    font-size: 8vw;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .service-item {
+    border-color: #9D9D9DFF;
+    padding: 0 1.11rem;
+  }
+
+  .join-section .join-form {
+    background: #FFF;
+    box-shadow: 0 1.11rem 2.22rem rgba(149, 149, 201, .4);
+    border-radius: .555rem;
+    padding: 6rem 1rem 3rem;
+  }
+
+  .social-icons {
+    margin-right: 0rem;
+    margin-left: 1.77rem;
+  }
 }
