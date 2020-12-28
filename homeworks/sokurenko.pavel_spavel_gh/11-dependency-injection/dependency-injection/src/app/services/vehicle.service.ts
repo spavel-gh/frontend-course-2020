@@ -1,17 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { delay, tap } from 'rxjs/operators';
+
+import { VehicleModel } from '../models/vehicle.model';
+import { MOCK_VEHICLES } from '../mocks/vechicles.mock';
 
 @Injectable({providedIn: 'root'})
 export class VehicleService {
-    constructor() { }
+  constructor() { }
 
-    str = 'hello world';
+  // str = 'hello world';
 
-    getVehicles(): Observable<string> {
-        return of(this.str).pipe(
-            delay(1000),
-        );
-    }
+  getVehicles(): Observable<VehicleModel[]> {
+    return of(MOCK_VEHICLES).pipe(
+      delay(1000),
+    );
+  }
 
 }

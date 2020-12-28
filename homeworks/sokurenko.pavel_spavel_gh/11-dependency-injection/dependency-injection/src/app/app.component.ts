@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-// import { Faker } from 'faker';
-import * as faker from 'faker';
-import { vehicle } from 'faker';
 import { VehicleService } from './services';
+
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'dependency-injection';
@@ -16,6 +15,7 @@ export class AppComponent {
 
   }
 
+  // a = MOCK_VEHICLES;
   manufacturer = 'manufacturer';
   model = 'model';
   fuel = 'fuel';
@@ -24,9 +24,10 @@ export class AppComponent {
 
   test(): void {
 
-    this.vehicleService.getVehicles().subscribe((str: string) => {
-      this.atest = str;
-    });
+    // this.vehicleService.getVehicles().subscribe((str: string) => {
+    //   this.atest = str;
+    // });
+    // console.log(this.a);
 
     // console.log(faker.fake("{{name.lastName}}, {{name.firstName}} {{name.suffix}}"));
     // this.manufacturer = faker.fake('{vehicle.manufacturer}');
