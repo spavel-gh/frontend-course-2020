@@ -3,24 +3,20 @@
   outline-offset: -1px;
 }
 
-.page-section {
+/* .page-section {
   outline: #0003 dashed 1px;
   outline-offset: -.5rem;
-}
+} */
 
-img {
+/* img {
   background-color: brown;
   object-fit: cover;
   outline: #0003 dashed 1px;
   outline-offset: -1px;
-}
+} */
 
 
 /*
 *   Header
 */
-
-.header {
-  background: rgba(196, 196, 196, .1);
-}
 
